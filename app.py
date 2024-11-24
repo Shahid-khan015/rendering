@@ -10,6 +10,7 @@ CORS(app)
 def index():
     return render_template('index.html')
 
+application = app
 
 if __name__ == '__main__':
     app.run()
