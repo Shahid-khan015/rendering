@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+</head>
+<body>
+
+<input type="search" name="search" id="search" placeholder="Search Key.....*" required>
+<input type="submit" value="Search" onclick="search()">
+
+
+<script>
+
+    function search(){
+
+        key = document.getElementById("search").value;
+
+        window.location.href = `http://127.0.01:5000/Scrape?search=${key}`
+
+    }
+
+</script>
+
+</body>
+
+</html>
